@@ -1,0 +1,325 @@
+/*  */
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #000000;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px 15px 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  transition: color 0.9s; /* Adding transition for smooth color change */
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  color: #F7FF00; /* Change the color to orange on hover and when active */
+}
+.logo {
+  width: 60px; /* Adjust the width as needed */
+  height: auto;
+  display: inline-block; /* Change from "block" to "inline-block" */
+  margin-right: 400px;
+  margin-bottom: -25px;
+  margin-top: -25px;
+  margin-left: -35px;
+  padding: 0;
+  vertical-align: middle; /* Add this line for vertical alignment */
+}
+
+
+.hero {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+}
+.hero img {
+  width: 100%;
+  position: static;
+  height: auto;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-bottom: 1rem;
+  
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cta-button {
+  display: inline-block;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 10px 20px;
+  background-color: #f6ff0047; /* Adjust the alpha value for default opacity */
+  color: #fff;
+  margin-right: 20px;
+  text-decoration: none;
+  border-radius: 8px; /* Adjust the value to change the curve radius */
+  transition: background-color 1s ease; /* Adding transition for smooth effect */
+}
+
+.cta-button:hover {
+  background-color: #F7FF00; /* Change the alpha value to 1 for full opacity */
+  color: #000;
+}
+
+.promotions {
+  text-align: center;
+  padding: 50px 0;
+  margin-top: -10px;
+  background-color: #000;
+}
+.promotions h2{
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-bottom: 1rem;
+  margin-top: -20px;
+  color:#ffffff
+  
+}
+.promotions p{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 10px;
+  color:#ffffff
+}
+.video-banner {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.video-banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.product-item {
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.add-to-cart-btn {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #F7FF00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #F7FF00;
+}
+
+/* Grid Layout for Products */
+#products-innovation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+/* Additional Styling for Product Items */
+#products-innovation img {
+  max-width: 100%;
+  height: auto;
+}
+.our-team {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-member h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.team-member p {
+  color: #888;
+}
+/* Contact Section */
+.testimonials-container {
+  padding: 0 40px;
+  margin: 30px 0 50px;
+  position: relative;
+  background-color:  #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials {
+  display: flex;
+  justify-content:space-around;
+  align-items: space-evenly;
+}
+
+.testimonials-container h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 10px 10px 15px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 30px;
+  color: #000;
+}
+
+.testimonial {
+  width: 25%;
+  border-radius: 7px;
+  background-color:   #F7FF00;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.testimonial h3 {
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.testimonial p {
+  font-size: 1.2rem;
+  color:  #000000;
+  margin-bottom: 0.5rem;
+  font-weight: lighter;
+}
+/* use w/ css reset normalize */
+/* grid engine */
+/* mobile first approach w/ stacking columns */
+.row {
+  display: flex;
+  flex-direction: row;
+  max-width: 70em;
+  margin: 0 auto;
+  
+}
+
+.col {
+  flex: 1;
+}
+
+/* custom styles */
+.container {
+  width: 100%;
+  position: relative;
+}
+/* .banner */
+.banner img{
+  height: 25em;
+  width: 100%;
+}
+
+.content {
+  justify-content: space-between;
+  margin-top: 1.3em;  
+}
+.content .product {
+  /*border: .063em solid lightgray;*/
+  padding: 1em 1em 0 1em;
+  margin: .5em;
+  /*overflow: hidden;*/
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.product img {
+  height: 11em;
+  width: 100%;
+}
+
+.product h3 {
+  color: #ff9100;
+}
+
+.product h4 {
+  margin: .3em 0;
+}
+
+.product input:hover {
+  color: white;
+  background-color: #ff9100;
+}
+
+
+
